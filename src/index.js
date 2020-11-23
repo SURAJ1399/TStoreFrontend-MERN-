@@ -1,6 +1,5 @@
-import React from "react"
-import Routes from "./Routes"
-import ReactDOM from "react-dom"
+import React from "react";
+import Routes from "./Routes";
+import ReactDOm from "react-dom";
 
-
-ReactDOM.render(<Routes></Routes>,document.getElementById("root"));
+ReactDOm.render(<Routes />, document.getElementById("root"));
