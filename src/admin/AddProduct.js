@@ -5,7 +5,6 @@ import Base from "../core/Base";
 import { createaProduct, getCategories } from "./helper/adminapicall";
 
 const AddProduct = () => {
-     
      const { user, token } = isAuthenticated();
 
      const [values, setValues] = useState({

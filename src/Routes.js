@@ -15,6 +15,7 @@ import ManageCategories from "./admin/ManageCategory";
 import ManageProduct from "./admin/ManageProducts";
 
 import UpdateProduct  from "./admin/UpdateProduct";
+import Cart from "./core/Cart";
 
 function Routes() {
      return (
@@ -26,7 +27,7 @@ function Routes() {
                     <Route path="/signup" exact component={Signup} />
                     <Route path="/signin" exact component={Signin} />
                     <Route path="/user/dashboard" exact component={UserDashboard} />
-                  
+                    <Route path="/cart" exact component={Cart} />
                   
                     <PrivateRoute path="/user/dashboard" exact component={UserDashboard} />
                 
@@ -34,8 +35,7 @@ function Routes() {
                     <AdminRoutes path="/admin/create/category" exact component={AddCategory}/>
                     <AdminRoutes path="/admin/create/product" exact component={AddProduct}/>
                     <AdminRoutes path="/admin/categories" exact component={ManageCategories}/>
-                    <AdminRoutes path="/admin/categories" exact component={ManageCategories}/>
-                    <AdminRoutes path="/admin/categories" exact component={ManageCategories}/>
+                  
                     <AdminRoutes path="/admin/products" exact component={ManageProduct}/>
                     <AdminRoutes path="/admin/product/update/:productId" exact component={UpdateProduct}/>
                  
